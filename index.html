@@ -1,0 +1,43 @@
+<html>
+    <head>
+    	<meta charset="utf-8">
+        <title>Prática Terrível</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <form action="http://terrivel.herokuapp.com/monster" method="GET">
+            <h2>Alimente seu monstro</h2>
+            <label for="num_pedras"> 
+                Número de pedras: <input type="number" min="0" name="num_pedras" required>
+            </label>
+            <label for="tam_pedras"> 
+                Tamanho das pedras: <input type="number" value="3" name="tam_pedras" min="1" max="7">
+            </label>
+            <label for="nome"> 
+                Nome do mostro: <input type="text" name="nome" pattern="[A-Za-z]*" required>
+            </label>
+            <label for="corCeu1">
+                Cor primária do céu: <input type="color" name="corCeu1" value="#0fa4ec">
+            </label>
+            <label for="corCeu2">
+                Cor secundária do céu: <input type="color" name="corCeu2" value="#33f4a3">
+            </label>
+            <label for="tipo_pedras">
+                Tipo de pedras: 
+                <select name="tipo_pedras" id="tipo_pedras">
+                    <option value="marroada" selected>Marroada</option>
+                    <option value="ametista">Ametista</option>
+                    <option value="topazio">Topazio</option>
+                    <option value="espinela">Espinela</option>
+                </select>
+            </label>
+            <label for="tipo_pedras_sortidas">
+                Pedras sortidas <input type="checkbox">
+            </label>
+            <div id="buttons-div">
+            	<button type="submit">Alimentar</button>
+                <button type="reset">Começar de novo</button>
+            </div>
+        </form>
+    </body>
+</html>

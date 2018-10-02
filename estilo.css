@@ -1,0 +1,39 @@
+html{
+	box-sizing: border-box;
+	height: 100%;
+	display: block;
+}
+
+body{
+	background-image: url(imagens/monster_br.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+form{
+	background-color: white;
+	width: 300px;
+	height: auto;
+	padding: 20px;
+	margin: 100px auto auto auto;
+}		
+
+label{
+	display: block;
+	padding: 10px 0;
+}
+
+button{
+	margin: 10px 0;
+	text-align: center;
+}
+
+#buttons-div{
+	text-align: center;
+}
+
+h2{
+	padding: 0px;
+	text-align: center;
+}
